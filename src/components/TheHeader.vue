@@ -20,7 +20,7 @@
 <style scoped lang="postcss">
   .header {
     @apply flex justify-between items-center px-14 py-2;
-    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.1) 100%);
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.1) 90%);
   }
   .header-logo {
     @apply h-24
