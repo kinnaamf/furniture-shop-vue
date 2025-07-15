@@ -15,6 +15,6 @@ import ShowButton from "@/components/ShowButton.vue";
 
 <style scoped lang="postcss">
   .products-section {
-    @apply flex flex-col items-center gap-8;
+    @apply flex flex-col items-center gap-8 px-24;
   }
 </style>

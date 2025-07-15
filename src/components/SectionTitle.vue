@@ -5,5 +5,5 @@
 </script>
 
 <template>
-  <h2 class="section-title">{{ title }}</h2>
+  <h2 class="section-title" v-html="title"></h2>
 </template>

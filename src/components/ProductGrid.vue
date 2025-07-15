@@ -11,6 +11,6 @@ import ProductCard from "@/components/ProductCard.vue";
 
 <style scoped lang="postcss">
   .product-grid {
-    @apply grid grid-cols-4 px-24 gap-8;
+    @apply grid grid-cols-4 gap-8;
   }
 </style>
