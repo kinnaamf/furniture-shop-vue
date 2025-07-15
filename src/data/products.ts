@@ -11,6 +11,7 @@ const products = [
   {
     id: 0,
     name: 'Tina',
+    slug: 'tina',
     description: 'Stylish cafe table',
     price: 3500,
     isNew: false,
@@ -20,6 +21,7 @@ const products = [
   {
     id: 1,
     name: 'Leviosa',
+    slug: 'leviosa',
     description: 'Stylish cafe chair',
     price: 2500,
     isNew: false,
@@ -29,6 +31,7 @@ const products = [
   {
     id: 2,
     name: 'Milano',
+    slug: 'milano',
     description: 'Stylish sofa',
     price: 3500,
     isNew: false,
@@ -38,6 +41,7 @@ const products = [
   {
     id: 3,
     name: 'Respira',
+    slug: 'respira',
     description: 'Livingroom table',
     price: 3500,
     isNew: false,
@@ -47,6 +51,7 @@ const products = [
   {
     id: 4,
     name: 'Lampy',
+    slug: 'lampy',
     description: 'Stylish desk lamp',
     price: 1500,
     isNew: false,
@@ -56,6 +61,7 @@ const products = [
   {
     id: 5,
     name: 'Muggo',
+    slug: 'muggo',
     description: 'Coffee mug',
     price: 450,
     isNew: true,
@@ -65,6 +71,7 @@ const products = [
   {
     id: 6,
     name: 'Pinkgy',
+    slug: 'pinkgy',
     description: 'Cute bed set',
     price: 14000,
     isNew: false,
@@ -74,6 +81,7 @@ const products = [
   {
     id: 7,
     name: 'Potty',
+    slug: 'potty',
     description: 'Minimalist flower pot',
     price: 500,
     isNew: true,
