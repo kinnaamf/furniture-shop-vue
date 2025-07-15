@@ -5,9 +5,9 @@
 <template>
   <nav>
     <ul class="header-nav">
-      <li><router-link to="">Home</router-link></li>
-      <li><router-link to="">Shop</router-link></li>
-      <li><router-link to="">Team</router-link></li>
+      <li class="hover:font-bold"><router-link to="">Home</router-link></li>
+      <li class="hover:font-bold"><router-link to="">Shop</router-link></li>
+      <li class="hover:font-bold"><router-link to="">Team</router-link></li>
     </ul>
   </nav>
 </template>

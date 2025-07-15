@@ -1,6 +1,12 @@
 <script setup lang="ts">
 import products from "@/data/products.ts"
+import {ref} from "vue";
+import AddToCardButton from "@/components/AddToCardButton.vue";
+import ShareIcon from "@/components/icons/ShareIcon.vue";
+import FavouritesIcon from "@/components/icons/FavouritesIcon.vue";
 
+const isHovered = ref<boolean>(false);
+const hoveredIndex = ref<number | null>(null)
 </script>
 
 <template>
@@ -8,7 +14,20 @@ import products from "@/data/products.ts"
     v-for="(product, index) in products"
     :key="index"
     class="product-card"
+    @mouseenter="hoveredIndex = index;"
+    @mouseleave="hoveredIndex = null"
   >
+    <transition name="fade">
+      <div v-if="hoveredIndex == index" class="hovered-card">
+        <div class="hovered-card-content">
+          <AddToCardButton/>
+          <div class="text-white font-semibold flex gap-8">
+            <ShareIcon/>
+            <FavouritesIcon/>
+          </div>
+        </div>
+      </div>
+    </transition>
     <div
       :style="{backgroundImage: `url(${product.image})`}"
       class="product-image"
@@ -41,7 +60,7 @@ import products from "@/data/products.ts"
 }
 
 .product-card {
-  @apply text-[#3A3A3A]
+  @apply text-[#3A3A3A] relative
 }
 
 .product-data {
@@ -75,5 +94,21 @@ import products from "@/data/products.ts"
 
 .product-new {
   @apply text-white bg-[#136B4F] w-12 h-12 rounded-full flex items-center justify-center absolute right-6 top-6
+}
+
+.hovered-card {
+  @apply bg-[#3A3A3A]/70 h-full w-full absolute z-10 top-0 flex items-center justify-center duration-200 transition-all
+}
+.hovered-card-content {
+  @apply flex flex-col items-center gap-4;
+}
+.fade-enter-from, .fade-leave-to {
+  @apply opacity-0;
+}
+.fade-enter-active, .fade-leave-active {
+  @apply transition-opacity duration-300;
+}
+.fade-enter-to, .fade-leave-from {
+  @apply opacity-100;
 }
 </style>
