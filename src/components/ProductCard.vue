@@ -5,7 +5,6 @@ import AddToCardButton from "@/components/AddToCardButton.vue";
 import ShareIcon from "@/components/icons/ShareIcon.vue";
 import FavouritesIcon from "@/components/icons/FavouritesIcon.vue";
 
-const isHovered = ref<boolean>(false);
 const hoveredIndex = ref<number | null>(null)
 </script>
 

@@ -9,7 +9,7 @@ import SectionTitle from "@/components/SectionTitle.vue";
 import TheButton from "@/components/TheButton.vue";
 
 import slides from "@/data/slides.ts";
-import {onMounted, ref} from "vue";
+import {ref} from "vue";
 import LineIcon from "@/components/icons/LineIcon.vue";
 import SlideArrowIcon from "@/components/icons/SlideArrowIcon.vue";
 import ArrowIcon from "@/components/icons/ArrowIcon.vue";
